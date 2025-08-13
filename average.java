@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ans9 {
+public class average {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double num1 = sc.nextDouble();

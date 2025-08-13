@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ans8 {
+public class power {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double base = sc.nextDouble();

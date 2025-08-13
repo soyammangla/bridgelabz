@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ans5 {
+public class volume_of_cylinder {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double radius = sc.nextDouble();
