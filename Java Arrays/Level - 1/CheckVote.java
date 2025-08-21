@@ -28,4 +28,3 @@ public class CheckVote {
         sc.close();
     }
 }
-
