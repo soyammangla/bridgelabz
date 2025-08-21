@@ -1,8 +1,8 @@
+package Strings.Level1;
 import java.util.Scanner;
 
 public class SubString {
 
-    // Method to create a substring using charAt()
     public static String createSubstringUsingCharAt(String text, int start, int end) {
         String result = "";
         for (int i = start; i < end; i++) {
@@ -11,7 +11,6 @@ public class SubString {
         return result;
     }
 
-    // Method to compare two strings using charAt()
     public static boolean compareUsingCharAt(String str1, String str2) {
         if (str1.length() != str2.length()) {
             return false;
@@ -27,7 +26,6 @@ public class SubString {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Take user input
         System.out.print("Enter a string: ");
         String text = sc.next();
 
@@ -37,16 +35,12 @@ public class SubString {
         System.out.print("Enter end index: ");
         int end = sc.nextInt();
 
-        // Substring using charAt()
         String substringCharAt = createSubstringUsingCharAt(text, start, end);
 
-        // Substring using built-in method
         String substringBuiltIn = text.substring(start, end);
 
-        // Compare substrings
         boolean comparisonResult = compareUsingCharAt(substringCharAt, substringBuiltIn);
 
-        // Display results
         System.out.println("Substring using charAt(): " + substringCharAt);
         System.out.println("Substring using built-in substring(): " + substringBuiltIn);
         System.out.println("Are both substrings equal? " + comparisonResult);

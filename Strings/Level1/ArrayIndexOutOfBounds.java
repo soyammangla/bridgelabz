@@ -1,17 +1,17 @@
+package Strings.Level1;
+
 import java.util.Scanner;
 
 public class ArrayIndexOutOfBounds {
 
-    // Method to generate ArrayIndexOutOfBoundsException
     public static void generateException(String[] names) {
-        // Accessing index beyond array length
+
         System.out.println("Accessing index " + names.length + ": " + names[names.length]);
     }
 
-    // Method to handle ArrayIndexOutOfBoundsException
+
     public static void handleException(String[] names) {
         try {
-            // Accessing index beyond array length
             System.out.println("Accessing index " + names.length + ": " + names[names.length]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Caught ArrayIndexOutOfBoundsException: " + e);
@@ -24,7 +24,6 @@ public class ArrayIndexOutOfBounds {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Take user input
         System.out.print("Enter number of names: ");
         int size = sc.nextInt();
         String[] names = new String[size];
@@ -34,15 +33,13 @@ public class ArrayIndexOutOfBounds {
             names[i] = sc.next();
         }
 
-        // Step 1: Call method that generates exception
         System.out.println("\n---- Generating Exception ----");
         try {
-            generateException(names); // will crash
+            generateException(names);
         } catch (Exception e) {
             System.out.println("Program crashed here with exception: " + e);
         }
 
-        // Step 2: Call method that handles exception
         System.out.println("\n---- Handling Exception ----");
         handleException(names);
 
