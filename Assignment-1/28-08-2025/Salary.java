@@ -2,22 +2,17 @@ import java.util.Scanner;
 public class Salary {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.print("Enter number of employees: ");
         int n = sc.nextInt();
-
         String[] names = new String[n];
         int[] basicSalary = new int[n];
-
         for (int i = 0; i < n; i++) {
             sc.nextLine();
             System.out.print("\nEnter name of employee " + (i + 1) + ": ");
             names[i] = sc.nextLine();
-
             System.out.print("Enter basic salary of " + names[i] + ": ");
             basicSalary[i] = sc.nextInt();
         }
-
         System.out.println("\n----- Employee Salary Slips -----\n");
 
         for (int i = 0; i < n; i++) {
