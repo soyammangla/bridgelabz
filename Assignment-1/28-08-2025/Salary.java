@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; 
 public class Salary {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -14,19 +14,15 @@ public class Salary {
             basicSalary[i] = sc.nextInt();
         }
         System.out.println("\n----- Employee Salary Slips -----\n");
-
         for (int i = 0; i < n; i++) {
             double hra = 0.20 * basicSalary[i];
             double da = 0.10 * basicSalary[i];
             double gross = basicSalary[i] + hra + da;
-
             double tax = 0;
             if (gross > 50000) {
                 tax = 0.10 * gross;
             }
-
             double netSalary = gross - tax;
-
             System.out.println("Employee: " + names[i]);
             System.out.println("Basic Salary: " + basicSalary[i]);
             System.out.println("HRA (20%): " + hra);
